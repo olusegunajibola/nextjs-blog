@@ -1,10 +1,8 @@
 import Link from "next/link";
-import Layout from "./navigation";
 
 export default function Home() {
   return (
     <>
-    <Layout>
       <main style={{ padding: '20px', 
       display: 'flex',
       flexDirection: 'column',
@@ -21,13 +19,11 @@ export default function Home() {
           <li>
             <Link href="/posts/3">Post 3</Link>
           </li>
+                    <li>
+            <Link href="/posts/4">Post 4</Link>
+          </li>
          </ol>
       </main>
-
-      <footer style={{ textAlign: 'center', padding: '50px', background: '#f0f0f0', marginTop: 'auto' }}>
-        Copyright &copy; {new Date().getFullYear()} Olu
-      </footer>
-    </Layout>
     </>
   );
 }
