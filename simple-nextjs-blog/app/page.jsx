@@ -3,11 +3,14 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <main style={{ padding: '20px', 
-      display: 'flex',
-      flexDirection: 'column',
-      minHeight: '75vh' // Ensure the container takes at least the full height of the viewport 
-       }}>
+      <main
+        style={{
+          padding: "20px",
+          display: "flex",
+          flexDirection: "column",
+          minHeight: "75vh", // Ensure the container takes at least the full height of the viewport
+        }}
+      >
         Hi! Welcome to my blog. Here are some posts:
         <ol>
           <li>
@@ -19,10 +22,10 @@ export default function Home() {
           <li>
             <Link href="/posts/3">Post 3</Link>
           </li>
-                    <li>
+          <li>
             <Link href="/posts/4">Post 4</Link>
           </li>
-         </ol>
+        </ol>
       </main>
     </>
   );
